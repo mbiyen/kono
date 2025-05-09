@@ -1,0 +1,643 @@
+<!doctype html>
+<html amp lang="id">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <title>BeritaKini - Portal Berita Terkini</title>
+  <link rel="canonical" href="#">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Perkembangan Teknologi Ramah Lingkungan di Indonesia",
+      "datePublished": "2025-05-09T08:00:00+07:00",
+      "image": [
+        "/api/placeholder/800/450"
+      ]
+    }
+  </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+  <style amp-custom>
+    :root {
+      --primary-color: #1a73e8;
+      --secondary-color: #f8f9fa;
+      --text-color: #202124;
+      --light-text: #5f6368;
+      --border-color: #dadce0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .logo span {
+      color: #ea4335;
+    }
+    .menu-button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .categories {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .category {
+      white-space: nowrap;
+      color: var(--light-text);
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .category:hover, .category.active {
+      color: var(--primary-color);
+      background-color: rgba(26, 115, 232, 0.1);
+    }
+    .top-news {
+      margin-bottom: 2rem;
+    }
+    .headline {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+    .section-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .news-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .news-card:hover {
+      transform: translateY(-4px);
+    }
+    .card-image {
+      height: 200px;
+      position: relative;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-color);
+    }
+    .card-excerpt {
+      font-size: 0.9rem;
+      color: var(--light-text);
+      margin-bottom: 1rem;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--light-text);
+    }
+    .category-tag {
+      background-color: rgba(26, 115, 232, 0.1);
+      color: var(--primary-color);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .featured-article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .featured-content {
+      padding: 1.5rem;
+    }
+    .featured-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .featured-excerpt {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .read-more {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .read-more:hover {
+      background-color: #0d5bba;
+    }
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .tag {
+      background-color: var(--secondary-color);
+      border: 1px solid var(--border-color);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      color: var(--light-text);
+      text-decoration: none;
+    }
+    .social-sharing {
+      display: flex;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    footer {
+      background-color: #222;
+      color: #eee;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+    .footer-column h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-column li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-column a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .footer-column a:hover {
+      color: white;
+    }
+    .copyright {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #111;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    
+    /* AMP Sidebar Styles */
+    amp-sidebar {
+      width: 300px;
+      background-color: white;
+    }
+    .sidebar-menu {
+      padding: 1rem;
+    }
+    .sidebar-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-menu li {
+      margin-bottom: 1rem;
+    }
+    .sidebar-menu a {
+      color: var(--text-color);
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .sidebar-menu a:hover {
+      color: var(--primary-color);
+    }
+    .close-button {
+      margin-bottom: 1rem;
+      text-align: right;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .featured-article {
+        grid-template-columns: 1fr;
+      }
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* Article Styles */
+    .article-content {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .article-header {
+      margin-bottom: 1.5rem;
+    }
+    .article-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--light-text);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .article-author img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+    .article-body {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .article-body p {
+      margin-bottom: 1.5rem;
+    }
+    .article-body h2 {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+    }
+    .article-body h3 {
+      font-size: 1.3rem;
+      margin: 1.5rem 0 1rem;
+    }
+    .article-body img {
+      max-width: 100%;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+    .article-body blockquote {
+      border-left: 4px solid var(--primary-color);
+      padding-left: 1rem;
+      font-style: italic;
+      color: var(--light-text);
+      margin: 1.5rem 0;
+    }
+    .related-articles {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="#" class="logo">Berita<span>Kini</span></a>
+      <button class="menu-button" on="tap:sidebar.toggle">☰</button>
+    </div>
+  </header>
+  
+  <!-- Sidebar -->
+  <amp-sidebar id="sidebar" layout="nodisplay" side="right">
+    <div class="sidebar-menu">
+      <div class="close-button">
+        <button on="tap:sidebar.close">✕</button>
+      </div>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Nasional</a></li>
+        <li><a href="#">Internasional</a></li>
+        <li><a href="#">Teknologi</a></li>
+        <li><a href="#">Ekonomi</a></li>
+        <li><a href="#">Olahraga</a></li>
+        <li><a href="#">Kesehatan</a></li>
+        <li><a href="#">Hiburan</a></li>
+        <li><a href="#">Gaya Hidup</a></li>
+      </ul>
+    </div>
+  </amp-sidebar>
+  
+  <!-- Categories -->
+  <div class="categories">
+    <a href="#" class="category active">Beranda</a>
+    <a href="#" class="category">Nasional</a>
+    <a href="#" class="category">Internasional</a>
+    <a href="#" class="category">Teknologi</a>
+    <a href="#" class="category">Ekonomi</a>
+    <a href="#" class="category">Olahraga</a>
+    <a href="#" class="category">Kesehatan</a>
+    <a href="#" class="category">Hiburan</a>
+    <a href="#" class="category">Gaya Hidup</a>
+  </div>
+  
+  <div class="container">
+    <!-- Top News Carousel -->
+    <div class="top-news">
+      <amp-carousel width="1200" height="450" layout="responsive" type="slides" autoplay delay="5000">
+        <div>
+          <amp-img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9" width="1200" height="450" layout="responsive" alt="Perkembangan Teknologi Ramah Lingkungan di Indonesia"></amp-img>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 1rem; color: white;">
+            <div class="headline">Perkembangan Teknologi Ramah Lingkungan di Indonesia</div>
+            <p>Inovasi teknologi ramah lingkungan semakin berkembang pesat di Indonesia dalam beberapa tahun terakhir.</p>
+          </div>
+        </div>
+        <div>
+          <amp-img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9" width="1200" height="450" layout="responsive" alt="Kenaikan Harga Minyak Dunia Berdampak pada Ekonomi Nasional"></amp-img>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 1rem; color: white;">
+            <div class="headline">Kenaikan Harga Minyak Dunia Berdampak pada Ekonomi Nasional</div>
+            <p>Lonjakan harga minyak dunia memberi tekanan baru pada perekonomian Indonesia.</p>
+          </div>
+        </div>
+        <div>
+          <amp-img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9" width="1200" height="450" layout="responsive" alt="Timnas Indonesia Siap Hadapi Kualifikasi Piala Dunia 2026"></amp-img>
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 1rem; color: white;">
+            <div class="headline">Timnas Indonesia Siap Hadapi Kualifikasi Piala Dunia 2026</div>
+            <p>Persiapan intensif dilakukan untuk menghadapi pertandingan kualifikasi yang akan datang.</p>
+          </div>
+        </div>
+      </amp-carousel>
+    </div>
+    
+    <!-- Featured Article -->
+    <div class="featured-article">
+      <div>
+        <amp-img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92" width="600" height="400" layout="responsive" alt="Perkembangan Teknologi Ramah Lingkungan di Indonesia"></amp-img>
+      </div>
+      <div class="featured-content">
+        <span class="category-tag">Teknologi</span>
+        <h2 class="featured-title">Perkembangan Teknologi Ramah Lingkungan di Indonesia</h2>
+        <div class="article-meta">
+          <span>Oleh: Ahmad Fauzi</span>
+          <span>9 Mei 2025</span>
+          <span>5 menit baca</span>
+        </div>
+        <p class="featured-excerpt">
+          Di tengah krisis lingkungan global, Indonesia mulai menunjukkan komitmennya terhadap pengembangan teknologi ramah lingkungan. Berbagai startup dan perusahaan besar kini berlomba menciptakan solusi inovatif untuk mengatasi permasalahan lingkungan yang kian mendesak.
+        </p>
+        <a href="#" class="read-more">Baca Selengkapnya</a>
+      </div>
+    </div>
+    
+    <!-- Latest News -->
+    <section>
+      <h2 class="section-title">Berita Terbaru</h2>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="card-image">
+            <amp-img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" width="400" height="200" layout="responsive" alt="Kenaikan Harga Minyak Dunia"></amp-img>
+          </div>
+          <div class="card-content">
+            <span class="category-tag">Ekonomi</span>
+            <h3 class="card-title">Kenaikan Harga Minyak Dunia Berdampak pada Ekonomi Nasional</h3>
+            <p class="card-excerpt">
+              Lonjakan harga minyak dunia memberi tekanan baru pada perekonomian nasional. Pemerintah segera mengambil langkah antisipasi.
+            </p>
+            <div class="card-meta">
+              <span>9 Mei 2025</span>
+              <span>3 menit baca</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-card">
+          <div class="card-image">
+            <amp-img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366" width="400" height="200" layout="responsive" alt="Timnas Indonesia"></amp-img>
+          </div>
+          <div class="card-content">
+            <span class="category-tag">Olahraga</span>
+            <h3 class="card-title">Timnas Indonesia Siap Hadapi Kualifikasi Piala Dunia 2026</h3>
+            <p class="card-excerpt">
+              Skuad Garuda melakukan persiapan intensif untuk menghadapi pertandingan kualifikasi yang akan datang.
+            </p>
+            <div class="card-meta">
+              <span>8 Mei 2025</span>
+              <span>4 menit baca</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-card">
+          <div class="card-image">
+            <amp-img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" width="400" height="200" layout="responsive" alt="Inovasi Kesehatan"></amp-img>
+          </div>
+          <div class="card-content">
+            <span class="category-tag">Kesehatan</span>
+            <h3 class="card-title">Inovasi Terbaru dalam Pencegahan Penyakit Tropis</h3>
+            <p class="card-excerpt">
+              Peneliti Indonesia berhasil mengembangkan metode baru yang efektif untuk mencegah penyebaran penyakit tropis.
+            </p>
+            <div class="card-meta">
+              <span>7 Mei 2025</span>
+              <span>6 menit baca</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-card">
+          <div class="card-image">
+            <amp-img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366" width="400" height="200" layout="responsive" alt="Festival Budaya"></amp-img>
+          </div>
+          <div class="card-content">
+            <span class="category-tag">Budaya</span>
+            <h3 class="card-title">Festival Budaya Nusantara Digelar di 10 Kota Besar</h3>
+            <p class="card-excerpt">
+              Festival tahunan ini akan menampilkan kekayaan budaya dari berbagai daerah di Indonesia.
+            </p>
+            <div class="card-meta">
+              <span>6 Mei 2025</span>
+              <span>3 menit baca</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Full Article Example -->
+    <section class="article-content">
+      <div class="article-header">
+        <h1 class="article-title">Perkembangan Teknologi Ramah Lingkungan di Indonesia</h1>
+        <div class="article-meta">
+          <div class="article-author">
+            <amp-img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9" width="24" height="24" alt="Ahmad Fauzi"></amp-img>
+            <span>Ahmad Fauzi</span>
+          </div>
+          <span>9 Mei 2025</span>
+          <span>5 menit baca</span>
+          <span>Kategori: Teknologi</span>
+        </div>
+        <amp-img src="https://images.unsplash.com/photo-1542281286-9e0a16bb7366" width="800" height="400" layout="responsive" alt="Teknologi Ramah Lingkungan"></amp-img>
+      </div>
+      
+      <div class="article-body">
+        <p>
+          Di tengah krisis lingkungan global, Indonesia mulai menunjukkan komitmennya terhadap pengembangan teknologi ramah lingkungan. Berbagai startup dan perusahaan besar kini berlomba menciptakan solusi inovatif untuk mengatasi permasalahan lingkungan yang kian mendesak.
+        </p>
+        
+        <h2>Energi Terbarukan: Solusi Krisis Energi</h2>
+        <p>
+          Salah satu perkembangan paling signifikan dalam teknologi ramah lingkungan di Indonesia adalah sektor energi terbarukan. Dalam beberapa tahun terakhir, investasi di bidang energi surya dan angin meningkat pesat. PT Solar Indonesia, misalnya, telah berhasil mengembangkan panel surya dengan efisiensi tinggi yang disesuaikan dengan kondisi iklim Indonesia.
+        </p>
+        <p>
+          "Kami melihat potensi besar dalam energi surya di Indonesia. Dengan posisi geografis di garis khatulistiwa, Indonesia menerima sinar matahari yang melimpah sepanjang tahun," ujar Direktur PT Solar Indonesia, Budi Santoso.
+        </p>
+        <p>
+          Selain energi surya, pembangkit listrik tenaga mikrohidro juga mendapat perhatian serius. Di beberapa daerah pedesaan, mikrohidro telah berhasil menyediakan listrik bagi masyarakat yang sebelumnya tidak terjangkau jaringan PLN.
+        </p>
+        
+        <h2>Transportasi Berkelanjutan</h2>
+        <p>
+          Sektor transportasi juga mengalami transformasi menuju arah yang lebih ramah lingkungan. Pemerintah dan perusahaan swasta berkolaborasi untuk mengembangkan infrastruktur pendukung kendaraan listrik, mulai dari stasiun pengisian daya hingga jalur khusus sepeda.
+        </p>
+        <p>
+          "Transisi ke kendaraan listrik adalah keniscayaan. Indonesia berpotensi menjadi produsen baterai kendaraan listrik terbesar di dunia berkat cadangan nikel yang melimpah," kata Menteri Perindustrian dalam sebuah konferensi pers.
+        </p>
+        <p>
+          Startup lokal seperti ElectricGo telah meluncurkan layanan berbagi kendaraan listrik di beberapa kota besar, menawarkan alternatif transportasi yang lebih bersih bagi masyarakat urban.
+        </p>
+        
+        <h2>Tantangan dan Masa Depan</h2>
+        <p>
+          Meskipun tren positif terlihat jelas, adopsi teknologi ramah lingkungan di Indonesia masih menghadapi berbagai tantangan. Tingginya biaya investasi awal, kendala infrastruktur, dan kesadaran masyarakat yang masih terbatas menjadi hambatan utama.
+        </p>
+        <p>
+          "Kami perlu dukungan kebijakan yang lebih kuat dari pemerintah. Insentif fiskal dan kemudahan perizinan sangat penting untuk mendorong inovasi di sektor teknologi ramah lingkungan," ungkap ketua Asosiasi Pengembang Teknologi Hijau Indonesia.
+        </p>
+        <p>
+          Meski demikian, para ahli tetap optimis bahwa masa depan teknologi ramah lingkungan di Indonesia sangat cerah. Dengan komitmen yang tepat dari semua pemangku kepentingan, Indonesia berpotensi menjadi pemimpin dalam pengembangan dan adopsi teknologi hijau di kawasan Asia Tenggara.
+        </p>
+        
+        <div class="tag-cloud">
+          <a href="#" class="tag">teknologi hijau</a>
+          <a href="#" class="tag">energi terbarukan</a>
+          <a href="#" class="tag">inovasi</a>
+          <a href="#" class="tag">lingkungan</a>
+          <a href="#" class="tag">pembangunan berkelanjutan</a>
+        </div>
+        
+        <div class="social-sharing">
+          <amp-social-share type="twitter" width="40" height="40"></amp-social-share>
+          <amp-social-share type="facebook" width="40" height="40"></amp-social-share>
+          <amp-social-share type="linkedin" width="40" height="40"></amp-social-share>
+          <amp-social-share type="whatsapp" width="40" height="40"></amp-social-share>
+        </div>
+      </div>
+      
+      <div class="related-articles">
+        <h3 class="section-title">Artikel Terkait</h3>
+        <div class="news-grid">
+          <div class="news-card">
+            <div class="card-image">
+              <amp-img src="/api/placeholder/400/200" width="400" height="200" layout="responsive" alt="Startup Lingkungan"></amp-img>
+            </div>
+            <div class="card-content">
+              <span class="category-tag">Teknologi</span>
+              <h3 class="card-title">10 Startup Peduli Lingkungan yang Perlu Anda Ketahui</h3>
+              <div class="card-meta">
+                <span>5 Mei 2025</span>
+                <span>4 menit baca</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-card">
+            <div class="card-image">
+              <amp-img src="/api/placeholder/400/200" width="400" height="200" layout="responsive" alt="Kebijakan Lingkungan"></amp-img>
+            </div>
+            <div class="card-content">
+              <span class="category-tag">Politik</span>
+              <h3 class="card-title">Kebijakan Lingkungan dalam 5 Tahun Terakhir: Evaluasi dan Prospek</h3>
+              <div class="card-meta">
+                <span>3 Mei 2025</span>
+                <span>7 menit baca</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>BeritaKini</h3>
+        <p>Portal berita terpercaya yang menyajikan informasi terkini dari berbagai kategori untuk masyarakat Indonesia.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Kategori</h3>
